@@ -361,6 +361,8 @@ Error message and password prompt
 
 <li>$:/core/ui/TagTemplate</li>
 
+<li>$:/core/ui/TopBar/menu</li>
+
 <li>$:/core/ui/ViewTemplate/title</li>
 
 <li>$:/DefaultTiddlers</li>
@@ -434,6 +436,10 @@ Error message and password prompt
 <li>$:/plugins/tg/prettylink-button</li>
 
 <li>$:/plugins/tg/ro</li>
+
+<li>$:/plugins/tg/ro/advanced-search-button-style</li>
+
+<li>$:/plugins/tg/ro/publish-button</li>
 
 <li>$:/plugins/tg/sro</li>
 
@@ -1171,8 +1177,8 @@ Usage:
 <div created="20180127192551328" creator="TonGerner" modified="20180127192551328" modifier="TonGerner" title="$:/config/AnimationDuration">
 <pre>0</pre>
 </div>
-<div created="20210403161538972" creator="Pillosopher" modified="20210406080858619" modifier="Pillosopher" title="$:/config/AutoSave">
-<pre>yes</pre>
+<div created="20210403161538972" creator="Pillosopher" modified="20210406115248961" modifier="Pillosopher" title="$:/config/AutoSave">
+<pre>no</pre>
 </div>
 <div created="20210315084618831" modified="20210315084819724" title="$:/config/BitmapEditor/Colour">
 <pre>MediumBlue</pre>
@@ -1231,8 +1237,8 @@ Usage:
 <div created="20210314163417212" modified="20210314163417212" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
 <pre>show</pre>
 </div>
-<div created="20210315085148026" modified="20210315085148026" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/import">
-<pre>show</pre>
+<div created="20210315085148026" creator="Pillosopher" modified="20210406115344332" modifier="Pillosopher" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/import">
+<pre>hide</pre>
 </div>
 <div created="20210314163448895" modified="20210314163448895" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/manager">
 <pre>show</pre>
@@ -1240,7 +1246,7 @@ Usage:
 <div created="20210321175342318" creator="Pillosopher" modified="20210321175342318" modifier="Pillosopher" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions">
 <pre>show</pre>
 </div>
-<div created="20210314163435269" modified="20210314163435269" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-image">
+<div created="20210314163435269" creator="Pillosopher" modified="20210406115337884" modifier="Pillosopher" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-image">
 <pre>show</pre>
 </div>
 <div created="20210314164433772" creator="Pillosopher" modified="20210321174938275" modifier="Pillosopher" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal">
@@ -1258,8 +1264,8 @@ Usage:
 <div created="20210314163502035" creator="Pillosopher" modified="20210321175341732" modifier="Pillosopher" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/refresh">
 <pre>show</pre>
 </div>
-<div created="20210321175335765" creator="Pillosopher" modified="20210321175337683" modifier="Pillosopher" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/save-wiki">
-<pre>show</pre>
+<div created="20210321175335765" creator="Pillosopher" modified="20210406115321841" modifier="Pillosopher" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/save-wiki">
+<pre>hide</pre>
 </div>
 <div created="20210314163455323" creator="Pillosopher" modified="20210323044845130" modifier="Pillosopher" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/storyview">
 <pre>hide</pre>
@@ -1417,8 +1423,8 @@ Usage:
 <div created="20210321175513620" creator="Pillosopher" modified="20210406114707081" modifier="Pillosopher" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/clone">
 <pre>hide</pre>
 </div>
-<div created="20210316093651797" creator="{P}illosopher" modified="20210406114826729" modifier="Pillosopher" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/delete">
-<pre>show</pre>
+<div created="20210316093651797" creator="{P}illosopher" modified="20210406115521935" modifier="Pillosopher" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/delete">
+<pre>hide</pre>
 </div>
 <div created="20210406100629114" creator="Pillosopher" modified="20210406114823310" modifier="Pillosopher" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit">
 <pre>show</pre>
@@ -11308,17 +11314,17 @@ Usage:
     }
 }</pre>
 </div>
-<div caption="{{$:/language/SideBar/More/Caption}}" created="20210406100723493" creator="Pillosopher" modified="20210406115124348" modifier="Pillosopher" tags="$:/tags/SideBar" title="$:/core/ui/SideBar/More">
+<div caption="{{$:/language/SideBar/More/Caption}}" created="20210406100723493" creator="Pillosopher" modified="20210406115534207" modifier="Pillosopher" tags="$:/tags/hide" title="$:/core/ui/SideBar/More">
 <pre>&lt;div class=&quot;tc-more-sidebar&quot;&gt;
 &lt;$macrocall $name=&quot;tabs&quot; tabsList=&quot;[all[shadows+tiddlers]tag[$:/tags/MoreSideBar]!has[draft.of]]&quot; default={{$:/config/DefaultMoreSidebarTab}} state=&quot;$:/state/tab/moresidebar&quot; class=&quot;tc-vertical tc-sidebar-tabs-more&quot; explicitState=&quot;$:/state/tab/moresidebar-1850697562&quot;/&gt;
 &lt;/div&gt;
 </pre>
 </div>
-<div caption="{{$:/language/SideBar/Recent/Caption}}" created="20210406115038361" creator="Pillosopher" modified="20210406115117636" modifier="Pillosopher" tags="$:/tags/SideBar" title="$:/core/ui/SideBar/Recent">
+<div caption="{{$:/language/SideBar/Recent/Caption}}" created="20210406115038361" creator="Pillosopher" modified="20210406120636746" modifier="Pillosopher" tags="$:/tags/hide" title="$:/core/ui/SideBar/Recent">
 <pre>&lt;$macrocall $name=&quot;timeline&quot; format={{$:/language/RecentChanges/DateFormat}}/&gt;
 </pre>
 </div>
-<div caption="{{$:/language/SideBar/Tools/Caption}}" created="20210406100722084" creator="Pillosopher" modified="20210406115122987" modifier="Pillosopher" tags="$:/tags/SideBar" title="$:/core/ui/SideBar/Tools">
+<div caption="{{$:/language/SideBar/Tools/Caption}}" created="20210406100722084" creator="Pillosopher" modified="20210406120653355" modifier="Pillosopher" tags="$:/tags/hide" title="$:/core/ui/SideBar/Tools">
 <pre>\define lingo-base() $:/language/ControlPanel/
 \define config-title()
 $:/config/PageControlButtons/Visibility/$(listItem)$
@@ -11373,6 +11379,20 @@ Open All
 &lt;/$reveal&gt;
 &lt;/$set&gt;
 &lt;/span&gt;
+</pre>
+</div>
+<div created="20140906123741743" creator="TonGerner" modified="20210406115549389" modifier="Pillosopher" tags="$:/tags/TopRightBar" title="$:/core/ui/TopBar/menu">
+<pre>&lt;$reveal state=&quot;$:/state/sidebar&quot; type=&quot;match&quot; text=&quot;yes&quot;&gt;
+&lt;$button set=&quot;$:/state/sidebar&quot; setTo=&quot;fluid-width&quot; tooltip=&quot;Fluid-width&quot; class=&quot;tc-btn-invisible&quot;&gt;{{$:/core/images/right-arrow}}&lt;/$button&gt;
+&lt;/$reveal&gt;
+
+&lt;$reveal state=&quot;$:/state/sidebar&quot; type=&quot;match&quot; text=&quot;fluid-width&quot;&gt;
+&lt;$button set=&quot;$:/state/sidebar&quot; setTo=&quot;no&quot; tooltip={{$:/language/Buttons/HideSideBar/Hint}} aria-label={{$:/language/Buttons/HideSideBar/Caption}} class=&quot;tc-btn-invisible&quot;&gt;{{$:/core/images/chevron-right}}&lt;/$button&gt;
+&lt;/$reveal&gt;
+
+&lt;$reveal state=&quot;$:/state/sidebar&quot; type=&quot;match&quot; text=&quot;no&quot;&gt;
+&lt;$button set=&quot;$:/state/sidebar&quot; setTo=&quot;yes&quot; tooltip={{$:/language/Buttons/ShowSideBar/Hint}} aria-label={{$:/language/Buttons/ShowSideBar/Caption}} class=&quot;tc-btn-invisible&quot;&gt;{{$:/core/images/chevron-left}}&lt;/$button&gt;
+&lt;/$reveal&gt;
 </pre>
 </div>
 <div created="20200314153228277" creator="TonGerner" modified="20200426060104561" modifier="TonGerner" tags="$:/tags/ViewTemplate" title="$:/core/ui/ViewTemplate/title">
@@ -13789,6 +13809,18 @@ uncheckactions=&quot;&quot;&quot;
     }
 }</pre>
 </div>
+<div created="20150519114003182" creator="TonGerner" modified="20210406115556571" modifier="Pillosopher" tags="$:/tags/advanced-search-button" title="$:/plugins/tg/ro/advanced-search-button-style" type="text/css">
+<pre>/* Hide advanced search button */
+.tc-image-advanced-search-button.tc-image-button {
+     padding-left: 15px;
+}</pre>
+</div>
+<div created="20170506162930803" creator="TonGerner" list-before="$:/core/ui/TopBar/menu" modified="20210406115552863" modifier="Pillosopher" tags="$:/tags/publish-button $:/tags/TopRightBar" title="$:/plugins/tg/ro/publish-button">
+<pre>&lt;$button class=&quot;tc-btn-invisible&quot; tooltip=&quot;Publish read-only&quot;&gt;
+&lt;$action-sendmessage $message=&quot;tm-open-window&quot; $param=&quot;$:/plugins/tg/ro/publish&quot; height=&quot;700px&quot; width=&quot;550px&quot;/&gt;
+{{$:/plugins/tg/ro/images/publish}}
+&lt;/$button&gt;</pre>
+</div>
 <div author="TonGerner" core-version="&gt;=5.1.15" created="20191230125412182" description="Makes TW readonly" list="readme license help" modified="20200323202638734" name="Makes TW readonly" plugin-type="plugin" source="http://tongerner.tiddlyspot.com/" title="$:/plugins/tg/sro" type="application/json" version="0.1.8">
 <pre>{
     &quot;tiddlers&quot;: {
@@ -15859,7 +15891,7 @@ html .tc-tiddler-controls button {
 <div created="20210318174047914" creator="Pillosopher" modified="20210318174427721" modifier="Pillosopher" title="$:/state/tab--4179469">
 <pre>$:/plugins/tg/toolbar/settings</pre>
 </div>
-<div created="20210404052317024" creator="Pillosopher" modified="20210406115220779" modifier="Pillosopher" title="$:/state/tab--583951085">
+<div created="20210404052317024" creator="Pillosopher" modified="20210406120804584" modifier="Pillosopher" title="$:/state/tab--583951085">
 <pre>$:/plugins/tg/ro/save</pre>
 </div>
 <div created="20210319100446504" creator="Pillosopher" modified="20210321174436180" modifier="Pillosopher" title="$:/state/tab--959111941">
@@ -15877,7 +15909,7 @@ html .tc-tiddler-controls button {
 <div created="20210317140146499" creator="Pillosopher" modified="20210406051546836" modifier="Pillosopher" title="$:/state/tab-2059741237">
 <pre>$:/plugins/tg/toolbar/settings</pre>
 </div>
-<div created="20200926195203829" creator="TonGerner" modified="20210406080902130" modifier="Pillosopher" title="$:/state/tab-2065006209">
+<div created="20200926195203829" creator="TonGerner" modified="20210406120807489" modifier="Pillosopher" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
 <div created="20210317135939691" creator="Pillosopher" modified="20210317135939691" modifier="Pillosopher" title="$:/state/tab-28511139">
@@ -15916,13 +15948,13 @@ html .tc-tiddler-controls button {
 <div created="20200425113252629" creator="TonGerner" modified="20210317102420516" modifier="TonGerner" title="$:/state/tab/sidebar--1435920229">
 <pre>$:/core/ui/SideBar/Tools</pre>
 </div>
-<div created="20210318095730220" creator="Pillosopher" modified="20210406080927273" modifier="Pillosopher" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Recent</pre>
+<div created="20210318095730220" creator="Pillosopher" modified="20210406120649443" modifier="Pillosopher" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Tools</pre>
 </div>
 <div created="20210406100614683" creator="Pillosopher" modified="20210406114838990" modifier="Pillosopher" title="$:/state/tabs/controlpanel/toolbars--106472439">
 <pre>$:/core/ui/ControlPanel/Toolbars/PageControls</pre>
 </div>
-<div created="20210404052523844" creator="Pillosopher" modified="20210404052539845" modifier="Pillosopher" title="$:/state/tabs/controlpanel/toolbars--1698561713">
+<div created="20210404052523844" creator="Pillosopher" modified="20210406120626862" modifier="Pillosopher" title="$:/state/tabs/controlpanel/toolbars--1698561713">
 <pre>$:/core/ui/ControlPanel/Toolbars/PageControls</pre>
 </div>
 <div created="20210317135626231" creator="Pillosopher" modified="20210406051751147" modifier="Pillosopher" title="$:/state/tabs/controlpanel/toolbars-1345989671">
@@ -15943,7 +15975,7 @@ html .tc-tiddler-controls button {
 <div created="20210316093322800" creator="{" modified="20210316095639696" modifier="{Pillosopher" title="$:/status/UserName">
 <pre>Pillosopher</pre>
 </div>
-<div created="20210406085335802" creator="Pillosopher" list="$:/plugins/tg/ro/publish OpenWalden 2021-04 Annotations Contents" modified="20210406114746866" modifier="Pillosopher" title="$:/StoryList">
+<div created="20210406085335802" creator="Pillosopher" list="Contents" modified="20210406115625160" modifier="Pillosopher" title="$:/StoryList">
 <pre></pre>
 </div>
 <div color="#bbb" created="20210315075121921" creator="Pillosopher" icon="$:/core/images/tag-button" modified="20210316180318453" modifier="Pillosopher" title="$:/TagManager">
@@ -17825,7 +17857,7 @@ Dordrecht, the Netherlands, my home town.
 &lt;&lt;readme $:/plugins/tg/note-button/readme $:/plugins/tg/note-button&gt;&gt;
 </pre>
 </div>
-<div created="20210404052101703" creator="Pillosopher" modified="20210406115202141" modifier="Pillosopher" tags="" title="OpenWalden">
+<div created="20210404052101703" creator="Pillosopher" modified="20210406115448007" modifier="Pillosopher" tags="" title="OpenWalden">
 <pre>{{$:/plugins/tg/ro/publish}}</pre>
 </div>
 <div created="20210316095213119" creator="{P}illosopher" modified="20210316095725159" modifier="Pillosopher" title="Pillosopher">
@@ -18230,8 +18262,9 @@ This guide describes how to change the standard twostate ({{$:/core/images/chevr
 <div color="#4e7a27" created="20210316112121722" creator="Pillosopher" modified="20210316112121722" modifier="Pillosopher" title="wellness">
 <pre></pre>
 </div>
-<div created="20210329075722219" creator="Pillosopher" modified="20210406082452761" modifier="Pillosopher" tags="2021-03 [[CAT-Why so?]] [[critical thinking]] ideology strategy productivity self-help" title="Why we find information overload so exhausting">
-<pre>&lt;hr&gt;
+<div created="20210329075722219" creator="Pillosopher" modified="20210406120027556" modifier="Pillosopher" tags="2021-03 [[CAT-Why so?]] [[critical thinking]] ideology strategy productivity self-help" title="Why we find information overload so exhausting">
+<pre>&lt;iframe src=&quot;https://anchor.fm/p-rescription/embed/episodes/Information-exhaustion-3-reasons-for-it----and-what-to-do-about-it-eu6d0n&quot; height=&quot;102px&quot; width=&quot;100%&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
+&lt;hr&gt;
 ''CATEGORY: ''@@background-color:Yellow;Why so? @@
 &lt;hr&gt;
 {{MM-Epistemic-exhaustion}}
