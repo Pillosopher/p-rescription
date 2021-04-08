@@ -735,6 +735,8 @@ Error message and password prompt
 
 <li>documentation</li>
 
+<li>Draft of 'Test collapsible tiddle' by Pillosopher</li>
+
 <li>Editor toolbar buttons</li>
 
 <li>Emphasized theme</li>
@@ -15886,8 +15888,8 @@ html .tc-tiddler-controls button {
 <div created="20210319103212537" creator="Pillosopher" modified="20210319103212537" modifier="Pillosopher" title="$:/state/ShowPaletteEditor">
 <pre>yes</pre>
 </div>
-<div created="20160725112947956" creator="TonGerner" modified="20210407132919188" modifier="Pillosopher" title="$:/state/sidebar">
-<pre>yes</pre>
+<div created="20160725112947956" creator="TonGerner" modified="20210408053435761" modifier="Pillosopher" title="$:/state/sidebar">
+<pre>fluid-width</pre>
 </div>
 <div created="20210401171755294" creator="Pillosopher" modified="20210401171755294" modifier="Pillosopher" title="$:/state/tab--108202022">
 <pre>$:/core/ui/TiddlerInfo/References</pre>
@@ -15994,7 +15996,7 @@ html .tc-tiddler-controls button {
 <div created="20210316093322800" creator="{" modified="20210316095639696" modifier="{Pillosopher" title="$:/status/UserName">
 <pre>Pillosopher</pre>
 </div>
-<div created="20210408050816322" creator="Pillosopher" list="[[Test collapsible tiddle]] Contents" modified="20210408053133729" modifier="Pillosopher" title="$:/StoryList">
+<div created="20210408050816322" creator="Pillosopher" list="[[Draft of 'Test collapsible tiddle' by Pillosopher]] Contents" modified="20210408054103443" modifier="Pillosopher" title="$:/StoryList">
 <pre></pre>
 </div>
 <div color="#bbb" created="20210315075121921" creator="Pillosopher" icon="$:/core/images/tag-button" modified="20210316180318453" modifier="Pillosopher" title="$:/TagManager">
@@ -16934,7 +16936,7 @@ It isn't very useful to convert a single code tiddler to a plugin (e.g. my forme
 |$:/_filter/user-system|filter: list user defined system tiddlers (starting with`$:/_`)|
 </pre>
 </div>
-<div created="20210315061725176" creator="Pillosopher" list-before="$:/core/ui/SideBar/Open" modified="20210406054037471" modifier="Pillosopher" tags="" title="Contents">
+<div created="20210315061725176" creator="Pillosopher" list-before="$:/core/ui/SideBar/Open" modified="20210408054757442" modifier="Pillosopher" tags="" title="Contents">
 <pre>''Hello and Welcome''
 &lt;div class=&quot;tc-table-of-contents&quot;&gt;
 &lt;&lt;toc-selective-expandable &quot;Contents&quot; &quot;!title[$:/config/NewJournal/Tags]sort[modified]&quot;&gt;&gt;
@@ -16942,9 +16944,17 @@ It isn't very useful to convert a single code tiddler to a plugin (e.g. my forme
 &lt;/div&gt;
 All content in {P}rescription is organised by sections. Click on the section to view lists.
 &lt;hr&gt;
-&lt;h1&gt;[[TTT]]&lt;/h1&gt; &lt;p&gt;Archives of Thinking | Teaching | Talking&lt;p&gt;
-This section contains monthly postings of my newsletter.
-&lt;hr&gt;
+&lt;h2&gt;Thinking | Teaching | Talking - Archives&lt;/h2&gt;&lt;p&gt;
+This section contains a list of monthly postings of my newsletter.&lt;p&gt;
+&lt;$button class=&quot;tc-btn-invisible&quot; popup=&lt;&lt;qualify &quot;$:/temp/popup&quot;&gt;&gt;&gt;
+
+''Click here to open/ close the full list''
+&lt;/$button&gt;
+&lt;$reveal type=&quot;nomatch&quot; state=&lt;&lt;qualify &quot;$:/temp/popup&quot;&gt;&gt; text=&quot;&quot;&gt;
+&lt;p&gt;{{TTT}}
+
+&lt;/$reveal&gt;
+
 &lt;h2&gt;[[Annotations]]&lt;/h2&gt;&lt;br&gt;
 These are articles that contain a graphical summary (mind map) and a talk-through of the piece (Anchor podcasts). They are organised by month. Click on the month to view a list.
 &lt;hr&gt;</pre>
@@ -16980,6 +16990,22 @@ This guide describes how to customize TW5 (in general) and gives customization e
 </div>
 <div color="#7499da" created="20140420160436085" creator="TonGerner" modified="20180127161815025" modifier="TonGerner" title="documentation">
 <pre></pre>
+</div>
+<div created="20210407104538160" creator="Pillosopher" draft.of="Test collapsible tiddle" draft.title="Test collapsible tiddle" modified="20210408054407611" modifier="Pillosopher" tags="" title="Draft of 'Test collapsible tiddle' by Pillosopher">
+<pre>&lt;$button class=&quot;tc-btn-invisible&quot; popup=&lt;&lt;qualify &quot;$:/temp/popup&quot;&gt;&gt;&gt;
+
+''KEY WORDS'' -- (Click to open/close)
+&lt;/$button&gt;
+&lt;$reveal type=&quot;nomatch&quot; state=&lt;&lt;qualify &quot;$:/temp/popup&quot;&gt;&gt; text=&quot;&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;One&lt;/li&gt;
+&lt;li&gt;Two&lt;/li&gt;
+&lt;/ul&gt;
+{{TTT}}
+
+&lt;/$reveal&gt;
+
+What follows</pre>
 </div>
 <div created="20170511200213121" creator="TonGerner" modified="20170607095717886" modifier="TonGerner" tags="documentation" title="Editor toolbar buttons">
 <pre>!! [[Editor toolbar button plugins|Editor toolbar buttons]]
