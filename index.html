@@ -737,6 +737,8 @@ Error message and password prompt
 
 <li>documentation</li>
 
+<li>Draft of 'Annotations collapse' by Pillosopher</li>
+
 <li>Draft of 'Contents' by Pillosopher</li>
 
 <li>Editor toolbar buttons</li>
@@ -16022,7 +16024,7 @@ html .tc-tiddler-controls button {
 <div created="20210316093322800" creator="{" modified="20210316095639696" modifier="{Pillosopher" title="$:/status/UserName">
 <pre>Pillosopher</pre>
 </div>
-<div created="20210408093716079" creator="Pillosopher" list="Annotations [[Annotations collapse]] [[TTT collapse]] [[Draft of 'Contents' by Pillosopher]]" modified="20210409060136193" modifier="Pillosopher" title="$:/StoryList">
+<div created="20210408093716079" creator="Pillosopher" list="[[Draft of 'Annotations collapse' by Pillosopher]] Annotations [[TTT collapse]] [[Draft of 'Contents' by Pillosopher]]" modified="20210409060930946" modifier="Pillosopher" title="$:/StoryList">
 <pre></pre>
 </div>
 <div color="#bbb" created="20210315075121921" creator="Pillosopher" icon="$:/core/images/tag-button" modified="20210316180318453" modifier="Pillosopher" title="$:/TagManager">
@@ -16854,10 +16856,8 @@ focus, attention, productivity, distraction, clutter, multitasking, Pomodoro tec
 |Readonly |$:/plugins/tg/ro| &lt;&lt;pversion &quot;ro&quot;&gt;&gt;|
 </pre>
 </div>
-<div created="20210406052306910" creator="Pillosopher" modified="20210409060455437" modifier="Pillosopher" tags="Annotations" title="Annotations">
-<pre>
-&lt;hr&gt;
-[[2021-03]]&lt;br&gt;
+<div created="20210406052306910" creator="Pillosopher" modified="20210409060956191" modifier="Pillosopher" tags="Annotations" title="Annotations">
+<pre>[[2021-03]]&lt;br&gt;
 [[2021-04]]&lt;br&gt;</pre>
 </div>
 <div created="20210409060107704" creator="Pillosopher" modified="20210409060344829" modifier="Pillosopher" tags="" title="Annotations collapse">
@@ -17027,7 +17027,21 @@ This guide describes how to customize TW5 (in general) and gives customization e
 <div color="#7499da" created="20140420160436085" creator="TonGerner" modified="20180127161815025" modifier="TonGerner" title="documentation">
 <pre></pre>
 </div>
-<div created="20210315061725176" creator="Pillosopher" draft.of="Contents" draft.title="Contents" list-before="$:/core/ui/SideBar/Open" modified="20210409055911268" modifier="Pillosopher" tags="" title="Draft of 'Contents' by Pillosopher">
+<div created="20210409060107704" creator="Pillosopher" draft.of="Annotations collapse" draft.title="Annotations collapse" modified="20210409060912262" modifier="Pillosopher" tags="" title="Draft of 'Annotations collapse' by Pillosopher">
+<pre>&lt;div&gt;
+&lt;$button class=&quot;tc-btn-invisible&quot; popup=&lt;&lt;qualify &quot;$:/temp/popup&quot;&gt;&gt;&gt;
+
+''Click to show/ hide list''
+&lt;/$button&gt;
+&lt;$reveal type=&quot;nomatch&quot; state=&lt;&lt;qualify &quot;$:/temp/popup&quot;&gt;&gt; text=&quot;&quot;&gt;
+&lt;br&gt;
+{{Annotations}}
+
+&lt;/$reveal&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<div created="20210315061725176" creator="Pillosopher" draft.of="Contents" draft.title="Contents" list-before="$:/core/ui/SideBar/Open" modified="20210409060831187" modifier="Pillosopher" tags="" title="Draft of 'Contents' by Pillosopher">
 <pre>&lt;h1&gt;''Hello and Welcome''&lt;/h1&gt;
 &lt;div class=&quot;tc-table-of-contents&quot;&gt;
 &lt;&lt;toc-selective-expandable &quot;Contents&quot; &quot;!title[$:/config/NewJournal/Tags]sort[modified]&quot;&gt;&gt;
@@ -17042,8 +17056,7 @@ This section contains a list of monthly postings of my newsletter.&lt;p&gt;
 
 &lt;h2&gt;Annotations&lt;/h2&gt;&lt;p&gt;
 These are articles that contain a graphical summary (mind map) and a talk-through of the piece (Anchor podcasts). They are organised by month. Click on the link shown below to open the page.&lt;br&gt;
-&lt;h2&gt;[[Annotations]]&lt;/h2&gt;&lt;p&gt;
-&lt;hr&gt;</pre>
+''{{Annotations collapse}}''&lt;p&gt;</pre>
 </div>
 <div created="20170511200213121" creator="TonGerner" modified="20170607095717886" modifier="TonGerner" tags="documentation" title="Editor toolbar buttons">
 <pre>!! [[Editor toolbar button plugins|Editor toolbar buttons]]
