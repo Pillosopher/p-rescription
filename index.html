@@ -739,8 +739,6 @@ Error message and password prompt
 
 <li>Draft of '' by Pillosopher</li>
 
-<li>Draft of 'Contents' by Pillosopher</li>
-
 <li>Editor toolbar buttons</li>
 
 <li>Emphasized theme</li>
@@ -16024,7 +16022,7 @@ html .tc-tiddler-controls button {
 <div created="20210316093322800" creator="{" modified="20210316095639696" modifier="{Pillosopher" title="$:/status/UserName">
 <pre>Pillosopher</pre>
 </div>
-<div created="20210408093716079" creator="Pillosopher" list="Pillosopher [[Draft of 'Contents' by Pillosopher]]" modified="20210409062652361" modifier="Pillosopher" title="$:/StoryList">
+<div created="20210408093716079" creator="Pillosopher" list="Contents" modified="20210409062652361" modifier="Pillosopher" title="$:/StoryList">
 <pre></pre>
 </div>
 <div color="#bbb" created="20210315075121921" creator="Pillosopher" icon="$:/core/images/tag-button" modified="20210316180318453" modifier="Pillosopher" title="$:/TagManager">
@@ -16976,7 +16974,7 @@ It isn't very useful to convert a single code tiddler to a plugin (e.g. my forme
 |$:/_filter/user-system|filter: list user defined system tiddlers (starting with`$:/_`)|
 </pre>
 </div>
-<div created="20210315061725176" creator="Pillosopher" list-before="$:/core/ui/SideBar/Open" modified="20210409062112353" modifier="Pillosopher" tags="" title="Contents">
+<div created="20210315061725176" creator="Pillosopher" list-before="$:/core/ui/SideBar/Open" modified="20210409064406406" modifier="Pillosopher" tags="" title="Contents">
 <pre>&lt;h1&gt;''Hello and Welcome''&lt;/h1&gt;
 &lt;div class=&quot;tc-table-of-contents&quot;&gt;
 &lt;&lt;toc-selective-expandable &quot;Contents&quot; &quot;!title[$:/config/NewJournal/Tags]sort[modified]&quot;&gt;&gt;
@@ -16991,7 +16989,21 @@ This section contains a list of monthly postings of my newsletter.&lt;p&gt;
 
 &lt;h2&gt;Annotations&lt;/h2&gt;&lt;p&gt;
 These are articles that contain a graphical summary (mind map) and a talk-through of the piece (Anchor podcasts). They are organised by month. Click on the link shown below to open the page.&lt;br&gt;
-''{{Annotations collapse}}''&lt;p&gt;</pre>
+''{{Annotations collapse}}''&lt;p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Who's this?&lt;/h2&gt;
+&lt;div&gt;
+&lt;$button class=&quot;tc-btn-invisible&quot; popup=&lt;&lt;qualify &quot;$:/temp/popup&quot;&gt;&gt;&gt;
+
+''Click to see/ hide''
+&lt;/$button&gt;
+&lt;$reveal type=&quot;nomatch&quot; state=&lt;&lt;qualify &quot;$:/temp/popup&quot;&gt;&gt; text=&quot;&quot;&gt;
+&lt;br&gt;
+{{Pillosopher}}
+
+&lt;/$reveal&gt;
+&lt;/div&gt;
+</pre>
 </div>
 <div color="#016e8f" created="20210315074901937" modified="20210315074901937" title="creativity">
 <pre></pre>
@@ -17027,37 +17039,6 @@ This guide describes how to customize TW5 (in general) and gives customization e
 </div>
 <div created="20210409062436082" creator="Pillosopher" draft.of="" draft.title="" modified="20210409062540162" modifier="Pillosopher" tags="" title="Draft of '' by Pillosopher" type="image/jpeg">
 <pre>/9j/4AAQSkZJRgABAQAASABIAAD/4QBMRXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAACWKADAAQAAAABAAABcgAAAAD/wAARCAFyAlgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9sAQwACAgICAgIDAgIDBQMDAwUGBQUFBQYIBgYGBgYICggICAgICAoKCgoKCgoKDAwMDAwMDg4ODg4PDw8PDw8PDw8P/9sAQwECAgIEBAQHBAQHEAsJCxAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQ/90ABAAm/9oADAMBAAIRAxEAPwD9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9D9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9H9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9L9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9P9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9T9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9X9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9b9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9f9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9D9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9H9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9L9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9P9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9T9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9X9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9b9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9f9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9D9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9H9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9L9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9P9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9T9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9X9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9b9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=</pre>
-</div>
-<div created="20210315061725176" creator="Pillosopher" draft.of="Contents" draft.title="Contents" list-before="$:/core/ui/SideBar/Open" modified="20210409063147929" modifier="Pillosopher" tags="" title="Draft of 'Contents' by Pillosopher">
-<pre>&lt;h1&gt;''Hello and Welcome''&lt;/h1&gt;
-&lt;div class=&quot;tc-table-of-contents&quot;&gt;
-&lt;&lt;toc-selective-expandable &quot;Contents&quot; &quot;!title[$:/config/NewJournal/Tags]sort[modified]&quot;&gt;&gt;
-&lt;!-- &lt;&lt;toc-selective-expandable &quot;Contents&quot; &quot;!title[$:/config/NewJournal/Tags]sort[title]&quot;&gt;&gt; --&gt;
-&lt;/div&gt;
-All content in {P}rescription is organised by sections. Click on the section to view lists.
-&lt;hr&gt;
-&lt;h2&gt;Thinking | Teaching | Talking - Archives&lt;/h2&gt;&lt;p&gt;
-This section contains a list of monthly postings of my newsletter.&lt;p&gt;
-{{TTT collapse}}
-&lt;p&gt;
-
-&lt;h2&gt;Annotations&lt;/h2&gt;&lt;p&gt;
-These are articles that contain a graphical summary (mind map) and a talk-through of the piece (Anchor podcasts). They are organised by month. Click on the link shown below to open the page.&lt;br&gt;
-''{{Annotations collapse}}''&lt;p&gt;
-&lt;hr&gt;
-&lt;h2&gt;Who's this?&lt;/h2&gt;
-&lt;div&gt;
-&lt;$button class=&quot;tc-btn-invisible&quot; popup=&lt;&lt;qualify &quot;$:/temp/popup&quot;&gt;&gt;&gt;
-
-''Click to see/ hide list''
-&lt;/$button&gt;
-&lt;$reveal type=&quot;nomatch&quot; state=&lt;&lt;qualify &quot;$:/temp/popup&quot;&gt;&gt; text=&quot;&quot;&gt;
-&lt;br&gt;
-{{Pillosopher}}
-
-&lt;/$reveal&gt;
-&lt;/div&gt;
-</pre>
 </div>
 <div created="20170511200213121" creator="TonGerner" modified="20170607095717886" modifier="TonGerner" tags="documentation" title="Editor toolbar buttons">
 <pre>!! [[Editor toolbar button plugins|Editor toolbar buttons]]
