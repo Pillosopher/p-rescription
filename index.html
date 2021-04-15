@@ -351,6 +351,8 @@ Error message and password prompt
 
 <li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/new-here</li>
 
+<li>$:/config/ViewToolbarButtons/Visibility/$:/plugins/danielo515/encryptTiddler/crypt-button</li>
+
 <li>$:/config/ViewToolbarButtons/Visibility/$:/plugins/tg/tabstory/button</li>
 
 <li>$:/ControlPanel</li>
@@ -496,6 +498,8 @@ Error message and password prompt
 <li>$:/state/edit/references-442865681</li>
 
 <li>$:/state/editor-toolbar-buttons--206725939</li>
+
+<li>$:/state/encrypt</li>
 
 <li>$:/state/folded/$:/ControlPanel</li>
 
@@ -799,6 +803,8 @@ Error message and password prompt
 
 <li>How to say &quot;No&quot; politely</li>
 
+<li>How to talk to someone who intimidates you</li>
+
 <li>idea</li>
 
 <li>ideology</li>
@@ -844,6 +850,8 @@ Error message and password prompt
 <li>MM-consciousness</li>
 
 <li>MM-Epistemic-exhaustion</li>
+
+<li>MM-intimidation</li>
 
 <li>MM-mind-chatter</li>
 
@@ -1535,6 +1543,9 @@ Usage:
 <pre>show</pre>
 </div>
 <div created="20210316093641214" creator="{P}illosopher" modified="20210316175947009" modifier="Pillosopher" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/new-here">
+<pre>hide</pre>
+</div>
+<div created="20210415052453225" creator="Pillosopher" modified="20210415052453225" modifier="Pillosopher" title="$:/config/ViewToolbarButtons/Visibility/$:/plugins/danielo515/encryptTiddler/crypt-button">
 <pre>hide</pre>
 </div>
 <div created="20210407075919384" creator="Pillosopher" modified="20210407075920000" modifier="Pillosopher" title="$:/config/ViewToolbarButtons/Visibility/$:/plugins/tg/tabstory/button">
@@ -15918,6 +15929,9 @@ html .tc-tiddler-controls button {
 <div created="20200425124827453" creator="TonGerner" modified="20200425124827453" modifier="TonGerner" title="$:/state/editor-toolbar-buttons--206725939">
 <pre>2nd level bulleted list button</pre>
 </div>
+<div created="20210415052026363" creator="Pillosopher" modified="20210415052433466" modifier="Pillosopher" title="$:/state/encrypt">
+<pre></pre>
+</div>
 <div created="20210404051529221" creator="Pillosopher" modified="20210404051613776" modifier="Pillosopher" title="$:/state/folded/$:/ControlPanel">
 <pre>show</pre>
 </div>
@@ -16014,7 +16028,7 @@ html .tc-tiddler-controls button {
 <div created="20210319103212537" creator="Pillosopher" modified="20210319103212537" modifier="Pillosopher" title="$:/state/ShowPaletteEditor">
 <pre>yes</pre>
 </div>
-<div created="20160725112947956" creator="TonGerner" modified="20210414164111394" modifier="Pillosopher" title="$:/state/sidebar">
+<div created="20160725112947956" creator="TonGerner" modified="20210415074313970" modifier="Pillosopher" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20210401171755294" creator="Pillosopher" modified="20210401171755294" modifier="Pillosopher" title="$:/state/tab--108202022">
@@ -16053,11 +16067,11 @@ html .tc-tiddler-controls button {
 <div created="20210404051759633" creator="Pillosopher" modified="20210406115022698" modifier="Pillosopher" title="$:/state/tab-1587484365">
 <pre>$:/plugins/tg/ro/hide-sidebar-tabs</pre>
 </div>
-<div created="20200425122137216" creator="TonGerner" modified="20210409065045653" modifier="Pillosopher" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Appearance</pre>
+<div created="20200425122137216" creator="TonGerner" modified="20210415051814571" modifier="Pillosopher" title="$:/state/tab-1749438307">
+<pre>$:/plugins/danielo515/encryptTiddler/control-panel</pre>
 </div>
-<div created="20210413064608543" creator="Pillosopher" modified="20210415051706282" modifier="Pillosopher" title="$:/state/tab-1860683207">
-<pre>$:/plugins/tg/ro/save</pre>
+<div created="20210413064608543" creator="Pillosopher" modified="20210415052438754" modifier="Pillosopher" title="$:/state/tab-1860683207">
+<pre>$:/plugins/tg/ro/hide-toolbar-buttons</pre>
 </div>
 <div created="20210317140146499" creator="Pillosopher" modified="20210406051546836" modifier="Pillosopher" title="$:/state/tab-2059741237">
 <pre>$:/plugins/tg/toolbar/settings</pre>
@@ -16101,8 +16115,8 @@ html .tc-tiddler-controls button {
 <div created="20200425113252629" creator="TonGerner" modified="20210317102420516" modifier="TonGerner" title="$:/state/tab/sidebar--1435920229">
 <pre>$:/core/ui/SideBar/Tools</pre>
 </div>
-<div created="20210318095730220" creator="Pillosopher" modified="20210415051253108" modifier="Pillosopher" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Open</pre>
+<div created="20210318095730220" creator="Pillosopher" modified="20210415074710200" modifier="Pillosopher" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20210406100614683" creator="Pillosopher" modified="20210406114838990" modifier="Pillosopher" title="$:/state/tabs/controlpanel/toolbars--106472439">
 <pre>$:/core/ui/ControlPanel/Toolbars/PageControls</pre>
@@ -16116,8 +16130,8 @@ html .tc-tiddler-controls button {
 <div created="20210317135626231" creator="Pillosopher" modified="20210406051751147" modifier="Pillosopher" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/TopToolbar</pre>
 </div>
-<div created="20210413095744880" creator="Pillosopher" modified="20210415051202275" modifier="Pillosopher" title="$:/state/tabs/controlpanel/toolbars-685777411">
-<pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
+<div created="20210413095744880" creator="Pillosopher" modified="20210415052502119" modifier="Pillosopher" title="$:/state/tabs/controlpanel/toolbars-685777411">
+<pre>$:/core/ui/ControlPanel/Toolbars/PageControls</pre>
 </div>
 <div created="20210318114234930" creator="Pillosopher" modified="20210318114627836" modifier="Pillosopher" title="$:/state/tag-manager/2021-March">
 <pre>closed</pre>
@@ -16132,12 +16146,12 @@ html .tc-tiddler-controls button {
 <pre>Emphasized theme</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
-<pre>yes</pre>
+<pre>no</pre>
 </div>
 <div created="20210316093322800" creator="{" modified="20210316095639696" modifier="{Pillosopher" title="$:/status/UserName">
 <pre>Pillosopher</pre>
 </div>
-<div created="20210414164051136" creator="Pillosopher" list="iw2ml2 $:/Import Contents" modified="20210415051704193" modifier="Pillosopher" title="$:/StoryList">
+<div created="20210415051800942" creator="Pillosopher" list="[[How to talk to someone who intimidates you]] [[Our brain typically overlooks this brilliant problem-solving strategy]] 2021-04 Contents" modified="20210415074717681" modifier="Pillosopher" title="$:/StoryList">
 <pre></pre>
 </div>
 <div color="#bbb" created="20210315075121921" creator="Pillosopher" icon="$:/core/images/tag-button" modified="20210411100849731" modifier="Pillosopher" title="$:/TagManager">
@@ -16752,12 +16766,13 @@ $:/plugins/tg/tabstory/button
 
 </pre>
 </div>
-<div created="20210401100255670" creator="Pillosopher" modified="20210411094452949" modifier="Pillosopher" tags="2021-04 Annotations" title="2021-04">
+<div created="20210401100255670" creator="Pillosopher" modified="20210415074436331" modifier="Pillosopher" tags="2021-04 Annotations" title="2021-04">
 <pre>&lt;h2&gt;ANNOTATIONS FOR APRIL 2021&lt;/h2&gt;&lt;p&gt;&lt;hr&gt;
 &lt;ol&gt;
 &lt;li&gt;[[How to say &quot;No&quot; politely]]&lt;br&gt;
 &lt;li&gt;[[Major flaws of human thinking]]&lt;br&gt;
-&lt;li&gt;[[Our brain typically overlooks this brilliant problem-solving strategy]]&lt;br&gt;</pre>
+&lt;li&gt;[[Our brain typically overlooks this brilliant problem-solving strategy]]&lt;br&gt;
+&lt;li&gt;[[How to talk to someone who intimidates you]]</pre>
 </div>
 <div caption="2nd level bulleted list button" created="20181224171429542" creator="TonGerner" modified="20191231194037242" modifier="TonGerner" tags="button" title="2nd level bulleted list button">
 <pre>!! [[2nd level bulleted list button]] v&lt;&lt;pversion &quot;list-bullet2-button&quot;&gt;&gt;
@@ -17302,6 +17317,27 @@ chatter, thought loop, rumination, worry, cognition, productivity, stress, dista
 
 declining, communication, courtesy</pre>
 </div>
+<div created="20210415052645023" creator="Pillosopher" modified="20210415074308039" modifier="Pillosopher" tags="Annotations 2021-04 [[CAT-How to?]] change coaching instruction Podcast productivity self-help skill strategy transformation" title="How to talk to someone who intimidates you">
+<pre>&lt;hr&gt;
+''CATEGORY: ''@@background-color:Yellow;How to?@@
+&lt;hr&gt;
+{{MM-intimidation}}
+&lt;hr&gt;
+''Author: ''Yuko E | ''Source: ''Lifehacker | ''Year: ''2021&lt;br&gt;
+''URL: ''https://lifehacker.com/how-to-talk-to-someone-who-intimidates-you-1846657394&lt;hr&gt;
+&lt;h2&gt;KEY CONCEPTS&lt;/h2&gt;&lt;p&gt;
+Why do we see people as intimidating? It's a combination of past interactions and perceptions of the person as being smarter, better organized, more prepared, funnier, more attractive, more charismatic and more powerful than you.&lt;p&gt;
+Here are 4 things you need to do before any encounter with an intimidating person.&lt;p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;''Come prepared: ''If you know ahead of time of an encounter with an intimidating person, the come prepared with an idea of what you want to say. 
+
+&lt;li&gt;''Remind yourself that this person is also a human. ''They too are complex human being with fears and flaws. 
+
+&lt;li&gt;''Don’t forget what you bring to the conversation. ''No matter how intimidated you are by that person, that doesn’t take away your strengths, so lean into those.  
+
+&lt;li&gt;''Use your body language to your advantage. ''This goes beyond not cowering or slouching or making it obvious that you’re intimidated by this person, and actually using your body language as a way to help ground yourself during the conversation.</pre>
+</div>
 <div color="#450d59" created="20210315074933447" modified="20210315074933447" title="idea">
 <pre></pre>
 </div>
@@ -17393,7 +17429,7 @@ This TW contains:
 ''URL:'' https://thereader.mitpress.mit.edu/is-consciousness-everywhere/
 </pre>
 </div>
-<div created="20210404052101703" creator="Pillosopher" modified="20210413064558901" modifier="Pillosopher" tags="" title="iw2ml2">
+<div created="20210404052101703" creator="Pillosopher" modified="20210415052121379" modifier="Pillosopher" tags="" title="iw2ml2">
 <pre>{{$:/plugins/tg/ro/publish}}</pre>
 </div>
 <div created="20140203095535006" creator="TonGerner" modified="20200926193734549" modifier="TonGerner" tags="documentation" title="Latest news">
@@ -17985,6 +18021,9 @@ critical thinking, bias, wishful thinking, binary thinking, association, causati
 <pre></pre>
 </div>
 <div _canonical_uri="https://imagizer.imageshack.com/img923/3997/QJ1d45.png" created="20210327171227584" creator="Pillosopher" modified="20210329092907241" modifier="Pillosopher" tags="" title="MM-Epistemic-exhaustion" type="image/png">
+<pre></pre>
+</div>
+<div _canonical_uri="https://imagizer.imageshack.com/img924/4835/wHC0FL.png" created="20210415053145879" creator="Pillosopher" modified="20210415053248224" modifier="Pillosopher" tags="" title="MM-intimidation" type="image/png">
 <pre></pre>
 </div>
 <div _canonical_uri="https://imagizer.imageshack.com/img924/7859/6IuV5S.png" created="20210325124526018" creator="Pillosopher" modified="20210325124643931" modifier="Pillosopher" tags="" title="MM-mind-chatter" type="image/png">
